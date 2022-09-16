@@ -1,0 +1,29 @@
+<div class="container">
+  <h1>Tasks:</h1>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Description</th>
+        <th>Received Date</th>
+        <th>Assined to</th>
+        <th>Status</th>
+        <th>Priority</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of tasks">
+        <td>{{ data.work_order_id }}</td>
+        <td>{{ data.description }}</td>
+        <td>{{ data.received_date }}</td>
+        <td>
+          <div *ngFor="let person of data.assigned_to">
+            {{ person.person_name }}
+          </div>
+        </td>
+        <td>{{ data.status }}</td>
+        <td>{{ data.priority }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
