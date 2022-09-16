@@ -12,7 +12,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let data of tasks">
+      <tr *ngFor="let data of tasks | filterText: searchPhrase">
         <td>{{ data.work_order_id }}</td>
         <td>{{ data.description }}</td>
         <td>{{ data.received_date }}</td>
@@ -26,4 +26,14 @@
       </tr>
     </tbody>
   </table>
+  <div class="container">
+    <label>Search Descriptions: </label>
+    <input
+      type="string"
+      class="form-control"
+      [(ngModel)]="searchPhrase"
+      placeholder="Enter text to search"
+      autofocus
+    />
+  </div>
 </div>
