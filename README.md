@@ -17,7 +17,7 @@ Navigate to `http://localhost:4200/promise` or click corresponding link to see t
 Navigate to `http://localhost:4200/observable` or click corresponding link to see table with tasks downloaded from API/JSON as observable.
 
 Type text in search box to show only entries that contain this text in their description.
-![Example image](./img/example.png)<img src="./img/example.png">
+![Example image](./img/example.png "example")
 
 ## Info
 
