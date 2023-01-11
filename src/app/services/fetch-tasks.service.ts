@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
 import JsonData from '../../assets/response.json';
 import { Tasks } from '../interfaces/tasks';
-import { of } from 'rxjs';
 import { delay } from 'rxjs/operators';
+import { of } from 'rxjs';
+
 @Injectable({
   providedIn: 'root',
 })
